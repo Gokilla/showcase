@@ -1,0 +1,11 @@
+suite_namespace: backend\tests\functional
+actor: FunctionalTester
+modules:
+    enabled:
+        - Filesystem
+        - Yii2:
+              transaction: true
+        - REST:
+              depends: Yii2
+        - Asserts
+        - backend\tests\_support\Helper\Functional
